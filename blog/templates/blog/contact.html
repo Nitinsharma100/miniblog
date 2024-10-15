@@ -1,0 +1,41 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="col-sm-10 mx-auto p-4 bg-dark text-white rounded my-5">
+        <h3 class='text-center mb-4'>Contact Us</h3>
+
+        <form>
+            <div class="form-row ">
+                <!-- Name Input -->
+                <div class="form-group col-md-6 pb-3">
+                    <label for="inputName" class="font-weight-bold">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group col-md-6 pb-3">
+                    <label for="inputEmail" class="font-weight-bold">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <!-- Address Input -->
+            <div class="form-group pb-3">
+                <label for="inputAddress" class="font-weight-bold">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address" required>
+            </div>
+
+            <!-- Message Input -->
+            <div class="form-group pb-3">
+                <label for="message" class="font-weight-bold">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+            </div> <br>
+
+            <!-- Submit Button -->
+            <div class="text-center pb-3">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

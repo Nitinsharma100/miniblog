@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(75, 74, 74);
+    color: antiquewhite;
+}
+
+.post-container {
+    height: 300px;  /* Set a fixed height */
+    width: 100%;    /* Allow width to be responsive */
+    overflow: hidden;  /* Hide overflowed content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.post-container p {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* Ensures text is cut off with "..." if too long */
+    display: -webkit-box;
+  
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
